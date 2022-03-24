@@ -1,0 +1,993 @@
+/* WebSite Name: Gorle Agro Farm
+   Made by: Ritesh Gorle
+   Created: March 2022
+   Content: Goat and Poultry Farm
+*/
+
+/*****************************************
+Table Of Contents:
+
+01. BASIC CSS Style
+02. Heading & Social Links
+03. Navigation BAR
+04. TEXT-On-Image  
+05. Icon & Information 
+06. SALE Animation
+07. Product Price Table
+08. OUR Breeds 
+09. Who We Are 
+10. Our Best Products 
+11. Gorle Agro Farm
+12. Footer
+13. Goat, Poultry Products & Feed Supplements
+14. Blogs & About
+15. Contact Me
+16. media Queries
+******************************************/
+
+
+/******************************/
+/*   01. BASIC CSS Style      */
+/******************************/   
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+body{
+    background: #ffcc80;
+}
+
+
+h1{
+  font-size: 35px;
+}
+
+a,a:hover,a:active,a:focus {
+  display:inline-block;
+  text-decoration:none;
+  color: #616060;
+  font-size:16px;
+  padding:0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+  color:black;
+  font-size:16px;
+  line-height: 1.8;
+}
+
+img{border:none;
+    border-radius: 20px;
+    max-width:100%; 
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+ul{
+  padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+ul li {
+  list-style: none;
+  
+}
+
+.btn{
+    color: white;
+    background: #b3003b ;
+}
+
+/******************************/
+/* 02. Heading & Social Links */
+/******************************/   
+
+.jumbotron {
+margin : 0;
+padding : 0;
+height : 200px;
+background : #ffff00;
+border-bottom : 2px solid #fff;
+}
+
+.imgleft1{
+    width: 65px;
+    height: 65px;
+  }
+
+
+.fa{
+    font-size: 24px;
+  }
+
+/******************************/
+/*   03. Navigation BAR       */
+/******************************/   
+#navi{
+    color: #ffff00;
+
+}
+.navbar-toggler{
+    margin-left: 130px;
+}
+
+
+.dropdown-menu{
+    background:#ffff00;
+}
+
+.dropdown-item{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar-nav{
+  margin-left: 00px;
+}
+
+.navco{
+  color: #ffff00;
+  font-size: 14px;
+}
+
+
+/******************************/
+/*  04. TEXT-On-Image Start   */
+/******************************/   
+.TEXT-On-Image{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+.TEXT-On-Image.TEXT-On-Imagebg1{
+  background: url(eggs.jpg);
+  background-size: cover;
+}
+
+.TEXT-On-Image-write {
+    position: relative;
+    max-width: 596px;
+    z-index: 1;
+}
+.TEXT-On-Image-write h2 {
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+}
+.TEXT-On-Image-write h4 {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+.TEXT-On-Image-write h4 span{color:  #b3003b;}
+.TEXT-On-Image-write p {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.TEXT-On-Image-price { margin-bottom: 3px;}
+
+
+/*********************************/
+/* 05. Icon & Information Start  */
+/*********************************/   
+.Icon_Info .Icon_Info_real i {
+     background: black;
+     width: 120px;
+     height: 120px;
+     border-radius: 77px;
+     border: #ffff00 solid 4px;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+     flex-wrap: wrap;
+     transition: ease-in all 0.5s;
+}
+
+.Icon_Info .Icon_Info_real i:hover {
+     background: #b3003b;
+     transition: ease-in all 0.5s;
+}
+
+.Icon_Info .SIcon_Info_real h3 {
+     padding: 20px 0px 20px 0px;
+     font-size: 30px;
+     line-height: 30px;
+     color: #1f1716;
+     display: block;
+     font-weight: 500;
+}
+
+.Icon_Info .Icon_Info_real {
+     text-align: center;
+     background-color: transparent;
+     padding: 20px 15px;
+}
+
+.Icon_Info .Icon_Info_real p {
+     font-size: 17px;
+     line-height: 30px;
+     color: #1f1716;
+}
+
+
+/******************************/
+/*   06. SALE Animation       */
+/******************************/
+
+.bunty {
+  width: 70px;
+  height: 70px;
+  
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:240px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+/******************************/
+/*  07. Product Price Table   */
+/******************************/
+
+.Product-Price {
+    background: #f8f8f8;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Product-Price-real {
+    position: relative;
+    padding: 20px 0 7px 0;
+    background: #ffff00;
+    font-size: 42px;
+    color: #b3003b;
+    line-height: 54px;
+}
+
+.Product-Price-real span {
+    font-size: 18px;
+    color: black;
+    line-height: 32px;
+}
+
+.Product-Price-real strong
+{
+    font-weight: 500;
+}
+
+.main_heading h2 {
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Product-Price h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    background: #eee;
+    color: #b3003b;
+}
+
+.Product-Price h4 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding: 10px 20px;
+    background: #ffff00;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
+.Product-Price-Buy {
+    padding: 25px 0;
+}
+
+.Product-Price-mid .Product-Price-real {
+    background: #b3003b;
+    color: #fff;
+}
+
+.Product-Price-mid .Product-Price-real span {
+    color: black;
+}
+
+.Product-Price-mid h3 {
+    background: #ffff00;
+    color: black;
+}
+
+.Product-Price-mid h4 {
+    background: #b3003b;
+    color: #fff;
+}
+
+
+
+/******************************/
+/*  08. Breeds Of Chicken     */
+/******************************/
+.Breeds{
+    margin-bottom: 30px;
+}
+
+.men-heading h2 {
+    font-size: 40px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+
+.col-md-4{
+    padding-bottom:10px;
+}
+
+
+figure img{width:300px;}
+
+
+.Breeds .carousel-indicators {
+  left: 0;
+  top: -50px;
+}
+
+
+
+.Breeds .carousel-indicators li {
+  background: black;
+  border-radius: 50%;
+  width: 30px;
+  height: 10px;
+}
+
+.Breeds .carousel-indicators .active {
+  background: #b3003b;
+}
+
+
+.Breed-info {
+  text-align: center;
+  z-index: 4;
+  padding: 16px;
+  background-color: black;
+  border-radius: 30px;
+}
+
+.Breed-info-image {
+  position: relative;
+}
+
+.Breed-info-image figure img {
+  width: 100%;
+  height: auto;
+
+}
+
+.Breed-info-image-hed a h5 {
+  font-size: 30px;
+  color:  #b3003b;
+}
+
+
+/******************************/
+/*  09. Who We Are Start      */
+/******************************/   
+
+.Who {
+     margin-top: 00px;
+     background: #ffff00;
+     
+     padding: 20px 0;
+}
+
+.Who .hedname {
+     text-align: center;
+}
+
+.Who .hedname h2 {
+     font-size: 40px;
+    color: black;
+    font-weight: 700;
+     margin-bottom: 20px;
+}
+
+.Who .who-write h3 {
+     padding: 20px 0px 20px 0px;
+     font-size: 29px;
+     line-height: 30px;
+     color: #090808;
+     display: block;
+     font-weight: 500;
+     text-transform: uppercase;
+}
+
+.Who .who-write {
+     text-align: center;
+     background-color: transparent;
+     border-radius: 20px;
+     transition: ease-in all 0.5s;
+     text-align: left;
+}
+
+.Who .who-write p {
+     font-size: 17px;
+     line-height: 34px;
+     color: #090808;
+     padding: 5px 0;
+}
+
+.Who .who-img figure {
+     margin: 0;
+}
+
+.Who .who-img figure img {
+     width: 100%;
+}
+
+
+.men_Who {
+     padding-bottom: 30px;
+}
+
+
+/*********************************/
+/*  10. Our Best Products Start  */
+/*********************************/   
+.Best {padding:30px 0;}
+
+
+.zoom {
+  padding: 0px;
+  
+  transition: transform .1s;
+  width: 160px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+
+.section-header h2 {
+     font-size: 40px;
+    color: black;
+    font-weight: 700;
+     margin-bottom: 20px;
+}
+
+.single-blog-txt h2 a{
+    text-transform: initial;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    
+    color: #b3003b;
+}
+
+
+.blog-content:hover .single-blog-txt h2 a{color:  #ffff00;}
+/*.single-blog*/
+
+
+
+/******************************/
+/*  11. Gorle Agro Farm       */
+/******************************/ 
+.imgleft{
+    width: 140px;
+    height: 140px;
+  }
+
+.imgleft3{
+    width: 400px;
+    height: 300px;
+  }
+
+
+
+
+.imgleft4{
+    width: 36px;
+    height: 36px;
+
+}
+
+
+
+
+
+.advt h2 {
+     font-size: 40px;
+    color: black;
+    font-weight: 700;
+     margin-bottom: 20px;
+}
+
+
+.glow {
+  
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+/******************************/
+/*         12. Footer         */
+/******************************/ 
+.down{
+    background-color: #ffff00;
+}
+
+
+.text-dark:hover {
+    background-color: red;
+    border-radius: 5px;
+    
+}
+
+
+/********************************************************/
+/*   13. Goat, Poultry Products & Feed Supplements      */
+/*******************************************************/
+.goat-button {
+  border-radius: 4px;
+  background-color: yellow;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.goat-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.goat-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.goat-button:hover span {
+  padding-right: 25px;
+}
+
+.goat-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.goat-button1 {
+  border-radius: 4px;
+  background-color: yellow;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 16px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.goat-button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.goat-button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.goat-button1:hover span {
+  padding-right: 25px;
+}
+
+.goat-button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.inside-page {padding:20px 0 0px;}
+
+.inside-page-content,.blog-content{margin-top: 20px;}
+.single-inside-page,.single-blog {margin-bottom:30px;}
+
+/*.single-feature-txt */
+.inside-page-txt,.single-blog-txt{margin-top: 25px;}
+
+
+.inside-page-txt h3  {
+    font-size: 30px;
+    color: #b3003b;
+    margin: 10px 0px 15px;
+}
+
+.inside-page-txt p  {
+    font-size: 26px;
+    color: black;
+    margin: 10px 0px 15px;
+}
+
+
+/**************************/
+ /* 14. Blogs & About      */
+/**************************/
+.Cat-1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+}
+
+.Cat-1 h2 {
+  margin-bottom: 20px;
+}
+
+
+
+.Cat-1 img {
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+
+
+
+/***********************/
+/*   15. Contact Me    */
+/***********************/
+.ME {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.ME .text-container {
+  margin-bottom: 20px;
+}
+
+.ME h2 {
+  margin-bottom: 20px;
+}
+
+.ME p {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.ME h3 {
+  margin-bottom: 20px;
+}
+
+.form-3 .list-unstyled,
+.form-3 .list-unstyled a {
+  color: white;
+}
+
+.ME .list-unstyled .fas {
+  color: white;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.ME .list-unstyled .media-body {
+  margin-left: 0.75rem;
+}
+
+
+.ME .form-control-input,
+.ME .form-control-textarea {
+  border: 1px solid #ffedd0;
+  background-color: #ffedd0;
+}
+
+.ME .form-control-input:hover,
+.ME .form-control-textarea:hover {
+  border: 1px solid #fff;
+}
+
+.ME .help-block,
+.ME .checkbox,
+.ME .checkbox a {
+  color: white;
+}
+
+
+
+/******************************/
+/*  16. media Queries         */
+/******************************/
+/* Media Query for Mobile Devices */
+@media (min-width:  480px) {
+/* Heading */
+
+h1{
+    font-size: 50px;
+  }
+
+  .imgleft1{
+    width: 100px;
+    height: 100px;
+  } 
+
+  .fa{
+    font-size: 36px;
+  }
+
+
+
+
+/* SALE */
+.bunty {
+  width: 120px;
+  height: 120px;
+  
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:280px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+
+ }
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 768px){
+
+/* Heading */
+  h1{
+    font-size: 50px;
+  }
+
+  .imgleft1{
+    width: 130px;
+    height: 130px;
+  }
+
+
+/* Navigation */
+  .navbar-nav{
+  margin-left: 00px;
+}
+
+.navco{
+  color: #ffff00;
+  font-size: 20px;
+}
+
+
+/* Sale */
+.bunty {
+  width: 140px;
+  height: 140px;
+  
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:210px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Best */
+.zoom {
+  padding: 0px;
+  
+  transition: transform .1s;
+  width: 220px;
+  height: 110px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* Inside pages Gorle Agro Farm */
+.imgleft{
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .imgleft3{
+    width: 500px;
+    height: 250px;
+  }
+
+  .imgleft4{
+    width: 80px;
+    height: 80px;
+
+}
+
+
+/* inside pages buy button */
+.goat-button1 {
+  border-radius: 4px;
+  background-color: yellow;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+ 
+}
+
+
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 992px) {
+    h1{
+    font-size: 50px;
+  }
+
+  .imgleft1{
+    width: 150px;
+    height: 150px;
+  }
+
+
+.bunty {
+  width: 180px;
+  height: 180px;
+  
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 40px;
+  font-weight: 900;
+  border-radius: 10px;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:80px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
