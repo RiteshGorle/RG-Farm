@@ -52,7 +52,7 @@ h1{
   font-size: 35px;
 }
 
-a,a:hover,a:active,a:focus {
+a,a:hover,a:active, {
   display:inline-block;
   text-decoration:none;
   color: #616060;
@@ -113,17 +113,23 @@ ul li {
 /* 02. Heading & Social Links */
 /******************************/   
 
+#id55{
+  text-decoration: none;
+  color: black;
+}
+
+
 .jumbotron {
 margin : 0;
 padding : 0;
-height : 200px;
-background : #ffff00;
+height : 160px;
+background : #00ff00;
 border-bottom : 2px solid #fff;
 }
 
 .imgleft1{
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
   }
 
 
@@ -131,23 +137,40 @@ border-bottom : 2px solid #fff;
     font-size: 24px;
   }
 
+
+
+@media screen and (min-width: 0px) and (max-width: 1080px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  
+}
+
+@media screen and (min-width: 1081px) and (max-width: 1200px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+}
+
+
+
+
 /******************************/
 /*   03. Navigation BAR       */
 /******************************/   
 #navi{
-    color: #ffff00;
-
+    background-color: black;
+    color: red;
 }
+
+.navbar{
+    background: #00ff00;
+}
+
 .navbar-toggler{
     margin-left: 130px;
 }
 
 
-.dropdown-menu{
-    background:#ffff00;
-}
-
-.dropdown-item{
+.dropup{
     font-size: 16px;
     font-weight: 700;
 }
@@ -157,9 +180,49 @@ border-bottom : 2px solid #fff;
 }
 
 .navco{
-  color: #ffff00;
+  color: black;
   font-size: 14px;
 }
+
+.navco:hover {
+  color: red;
+}
+
+
+
+
+/************ Dropup ******************/
+.dropup {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+.dropup-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropup-content a:hover {background-color: #ccc}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #2980B9;
+}
+
 
 
 /******************************/
@@ -377,11 +440,8 @@ border-bottom : 2px solid #fff;
 }
 
 
-figure img{width:300px;}
-
-
 .Breeds .carousel-indicators {
-  left: 0;
+  left: 0%;
   top: -50px;
 }
 
@@ -413,7 +473,7 @@ figure img{width:300px;}
 
 .Breed-info-image figure img {
   width: 100%;
-  height: auto;
+  height: 450px;
 
 }
 
@@ -429,7 +489,7 @@ figure img{width:300px;}
 
 .Who {
      margin-top: 00px;
-     background: #ffff00;
+     background: #00ff00;
      
      padding: 20px 0;
 }
@@ -476,6 +536,7 @@ figure img{width:300px;}
 
 .Who .who-img figure img {
      width: 100%;
+     height: 430px;
 }
 
 
@@ -541,17 +602,10 @@ figure img{width:300px;}
   }
 
 
-
-
 .imgleft4{
     width: 36px;
     height: 36px;
-
 }
-
-
-
-
 
 .advt h2 {
      font-size: 40px;
@@ -559,7 +613,6 @@ figure img{width:300px;}
     font-weight: 700;
      margin-bottom: 20px;
 }
-
 
 .glow {
   
@@ -583,13 +636,19 @@ figure img{width:300px;}
 /*         12. Footer         */
 /******************************/ 
 .down{
-    background-color: #ffff00;
+    background-color: #00ff00;
+}
+
+#id77 {
+    
+    text-decoration: none;
 }
 
 
-.text-dark:hover {
+#id77:hover {
     background-color: red;
     border-radius: 5px;
+
     
 }
 
@@ -797,15 +856,14 @@ h1{
     font-size: 50px;
   }
 
-  .imgleft1{
-    width: 100px;
-    height: 100px;
-  } 
+  .navco{
+  color: black;
+  font-size: 14px;
+}
 
   .fa{
     font-size: 36px;
   }
-
 
 
 
@@ -833,10 +891,20 @@ h1{
   75%  {background-color:green; left:0px; top:100px;}
   100% {background-color:red; left:0px; top:0px;}
 }
+}
+
+
+/* Small devices (portrait tablets and large phones, 500px and up) */
+@media  (min-width: 500px) {
+
+.navco{
+  color: black;
+  font-size: 8px;
+}
+}
 
 
 
- }
 
 
 /* Media Query for low resolution  Tablets, Ipads */
@@ -847,11 +915,7 @@ h1{
     font-size: 50px;
   }
 
-  .imgleft1{
-    width: 130px;
-    height: 130px;
-  }
-
+  
 
 /* Navigation */
   .navbar-nav{
@@ -859,8 +923,8 @@ h1{
 }
 
 .navco{
-  color: #ffff00;
-  font-size: 20px;
+  color: black;
+  font-size: 12px;
 }
 
 
@@ -950,10 +1014,11 @@ h1{
     font-size: 50px;
   }
 
-  .imgleft1{
-    width: 150px;
-    height: 150px;
-  }
+  
+.navco{
+  color: black;
+  font-size: 22px;
+}
 
 
 .bunty {
@@ -981,13 +1046,3 @@ h1{
 }
 
 }
-
-
-
-
-
-
-
-
-
-
